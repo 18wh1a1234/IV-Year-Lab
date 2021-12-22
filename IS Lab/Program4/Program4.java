@@ -10,7 +10,7 @@ public class My_Enc{
             Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
             cipher.init(Cipher.ENCRYPT_MODE, myDESKey);
             
-			byte[] text = "ABCHI5".getBytes();
+	    byte[] text = "ABCHI5".getBytes();
             System.out.println("Text in bytes :" + text);
             System.out.println("Text : " + new String(text));
             byte[] textEnc = cipher.doFinal(text);
